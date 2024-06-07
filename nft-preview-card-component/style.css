@@ -1,0 +1,135 @@
+:root {
+    --Very-dark-bluebg: hsl(217, 54%, 11%);
+    --Very-dark-bluecbg: hsl(216, 50%, 16%);
+    --Very-dark-blueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-bluebg);
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 17px;
+    background-color: var(--Very-dark-bluecbg);
+    padding: 18px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+}
+
+.card h3 {
+    margin: 1rem;
+    color: var(--White);
+}
+
+.description {
+    margin: 1rem;
+    color: var(--Soft-blue);
+}
+.price-days {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Soft-blue);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.price img {
+    margin-right: 5px;
+    margin-left: 1rem;
+    width: 13px;
+    height: 20px;
+}
+.price {
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.days img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+.days {
+    margin-right: 1rem;
+    display: flex;
+    color: var(--Soft-blue);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: var(--Soft-blue);
+}
+.creator img {
+    border-radius: 1px solid white;
+    border-radius: 50px;
+    width: 30px;
+    margin-right: 1rem;
+}
+
+span {
+    color: white;
+    margin-left: 5px;
+}
+
+h3,
+span {
+    cursor: pointer;
+}
+
+h3:hover,
+span:hover {
+    color: var(--Cyan);
+}
+
+.overlay {
+    display: none;
+}
+
+.overlay img {
+    width: 60px;
+}
+
+.cardimg:hover .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Cyan);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
